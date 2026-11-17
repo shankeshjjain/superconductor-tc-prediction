@@ -73,7 +73,7 @@ This configuration yields the lowest validation RMSE among the five extended con
 
 ## 4. Final Evaluation
 
-After hyperparameter selection, the training and validation sets are combined to form the final training dataset. The selected XGBoost model and the OLS model are refitted using this combined dataset.
+After hyperparameter selection, the training and validation sets are combined to form the final training dataset. The selected XGBoost and OLS models are refitted on this combined dataset.
 
 Both models are then evaluated on the held-out test set using root mean squared error (RMSE), mean absolute error (MAE), and the coefficient of determination ($R^2$).
 
@@ -82,3 +82,13 @@ The final test-set performance metrics are reported in the README.
 ## AI-Use Disclosure
 
 ChatGPT (OpenAI) was used for conceptual explanations, Python code assistance, troubleshooting, data-analysis guidance, and documentation. AI-assisted code was executed and its outputs, including the data split, hyperparameter selection, evaluation metrics, and plots, were independently checked by the author. The final analysis and interpretation were reviewed by the author.
+
+## References
+
+1. Hamidieh, K. (2018). A Data-Driven Statistical Model for Predicting the Critical Temperature of a Superconductor. *Computational Materials Science*, 154, 346–354.
+
+2. Hamidieh, K. (2018). Superconductivity Data. UCI Machine Learning Repository. https://doi.org/10.24432/C53P47.
+
+3. Chen, T. and Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 785–794.
+
+4. Scikit-learn documentation: https://scikit-learn.org/stable/

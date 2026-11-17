@@ -4,7 +4,7 @@
 
 The UCI Superconductivity dataset contains 21,263 samples and 81 input features. The target variable is `critical_temp`.
 
-The dataset is divided into training, validation and test sets using `train_test_split` from scikit-learn, with a random seed of 42 for both splitting operations.
+The dataset is divided into training, validation, and test sets using `train_test_split` from scikit-learn, with a random seed of 42 for both splits.
 
 | Dataset | Number of samples | Proportion |
 |---|---:|---:|
@@ -18,7 +18,7 @@ The validation set is used for model selection and hyperparameter tuning. The te
 
 ### Ordinary Least Squares (OLS)
 
-OLS regression is implemented using scikit-learn's `LinearRegression`. The model is initially fitted on the training set and evaluated on the validation set. It is subsequently refitted using the combined training and validation sets for final evaluation.
+OLS regression is implemented using scikit-learn's `LinearRegression`. The model is initially fitted on the training set and evaluated on the validation set. It is subsequently refit using the combined training and validation sets for final evaluation.
 
 ### Ridge Regression
 
@@ -69,7 +69,7 @@ The selected configuration is:
 | Row subsampling | 0.5 |
 | Number of estimators | 1,069 |
 
-This configuration corresponds to the best validation RMSE among the five extended configurations.
+This configuration yields the lowest validation RMSE among the five extended configurations.
 
 ## 4. Final Evaluation
 
@@ -78,3 +78,7 @@ After hyperparameter selection, the training and validation sets are combined to
 Both models are then evaluated on the held-out test set using root mean squared error (RMSE), mean absolute error (MAE), and the coefficient of determination ($R^2$).
 
 The final test-set performance metrics are reported in the README.
+
+## AI-Use Disclosure
+
+ChatGPT (OpenAI) was used for conceptual explanations, Python code assistance, troubleshooting, data-analysis guidance, and documentation. AI-assisted code was executed and its outputs, including the data split, hyperparameter selection, evaluation metrics, and plots, were independently checked by the author. The final analysis and interpretation were reviewed by the author.

@@ -81,7 +81,7 @@ The final test-set performance metrics are reported in the README.
 
 ## AI-Use Disclosure
 
-ChatGPT (OpenAI) was used for conceptual explanations, Python code assistance, troubleshooting, data-analysis guidance, and documentation. AI-assisted code was executed and its outputs, including the data split, hyperparameter selection, evaluation metrics, and plots, were independently checked by the author. The final analysis and interpretation were reviewed by the author.
+ChatGPT (OpenAI) was used for conceptual explanations, Python code assistance, troubleshooting, data-analysis guidance, and documentation. AI-assisted code was executed and its outputs, including the data split, hyperparameter selection, evaluation metrics, and plots, were independently checked by the author. The final analysis and interpretation was performed by the author.
 
 ## References
 
